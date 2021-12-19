@@ -1,0 +1,109 @@
+<html>
+<head>
+    <title>Assessment 1 - My Profile</title>
+    <link href="css/style.css" rel=stylesheet>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <header>
+     <div class="columns">
+
+        <div>
+          <img class="headshot" src="images/NelsonLay.jpg" alt="Nelson Lay">
+        </div>
+
+        <div class="column1">
+          <p>Nelson Lay<p>
+          <p>Assessment 1 - My Profile<p>
+        </div>
+        <div class="column2">
+          <p>Student Number: s3052912<p>
+          <p>Email: s3052912@student.rmit.edu.au<p>
+          <p>Profile URL: <a href = "https://s3052912.github.io/assessment1_myprofile/"> https://s3052912.github.io/assessment1_myprofile/ </a>
+        </div>
+
+  </div>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="IdealJob.html">Ideal Job</a>
+    <a href="PersonalProfile.html">Personal Profile</a>
+    <a class="active" href="ProjectIdea.html">IT Project idea</a>
+  </div>
+</header>
+<main class="main">
+  <h1>IT Project Idea</h1>
+<hr>
+  <h2>Overview</h2>
+  <p>Sub-floor ventilation fans are installed in the subfloor of properties to reduce the dampness and humidity levels underneath the property.
+    This is achieved by increasing airflow under the property and introducing fresh natural air from outside the property.
+    Typically, these ventilation fans are connected to an analogue power point timer and run on a set daily schedule on the timer.<br></p>
+  <p>This project will add automation and smart access to sub-floor fans, a humidity sensor will be installed under the property and when a high humidity level
+    is reached, the fans will be turned on. The addition of smart access will provide property with the ability to control the fans remotely from a mobile device.</p>
+
+  <h2>Motivation</h2>
+  <p>(University Technology of Sydney 2021, para. 1) states <strong><em>‘Termites are a huge problem for Australia causing more than $1.5 billion in damage to homes every year.’</em></strong>,
+    preventing termite infestations can save property owners money on costly repair works caused by termite damage.<br></p>
+  <p>According to the (Australia Department of Health. Victoria 2021, section heading. Termite nests) <strong><em>‘Termites cannot stand long periods of low humidity’</em></strong>, properties with
+    damp and humid subfloors provide perfect conditions for Termites to nest. Reducing humidity levels is one important part of pest control in properties.<br></p>
+  <p>Prolonged exposure to mould spores can cause health issues, particularly in individuals with allergies or breathing conditions.
+    (Australia Department of Health. NSW 2021, section heading. What is mould?) states <strong><em>‘Mould may grow indoors in wet or moist areas lacking adequate ventilation.’</em></strong>
+    As mentioned in (Australia Department of Health. NSW 2021, section heading. Rising and lateral damp) we see that <strong><em>‘Rising damp is ground moisture rising up a brick or
+    stone wall. Poor sub-floor ventilation or moisture in the sub-floor area will worsen the problem.’</em></strong> Another benefit of having adequate sub-floor ventilation is
+    reducing moisture levels to inhibit mould growth.</p>
+
+  <h2>Description</h2>
+  <p>This project aims to add smart technology to existing sub-floor ventilation fan systems, these additions will add remote access from a mobile device and smart sensors for automation.<br></p>
+  <p>Typically, when sub-floor ventilation fans are installed, they are set to run on an analogue 24-hour power point timer. The running time of the fan varies based on the assessment
+    of the conditions provided by the technicians at the time of installation, ranging from upwards of 4 hours. This initial runtime may have been adequate for the conditions at the
+    time of installation. However, with changing environmental conditions and weather patterns, the running time of the sub-floor fans may need to be adjusted from time to time to cope
+    with additional moisture. Adversely, during periods of dryer conditions the initial running time may be excessive, leading to additional unnecessary running time and power consumption.<br></p>
+
+  <p>The addition of smart technology will be delivered in two methods.<br></p>
+  <p>Firstly, by replacing the traditional analogue 24-hour power point timer with a digital wi-fi enabled 24-hour power point timer. As access to the sub-floor in certain properties
+    can be difficult and messy, the addition of a wi-fi enabled timer will provide easy remote access to adjust the sub-floor fans running time to a more optimal level.<br></p>
+
+  <p>Secondly, by installing a humidity sensor in the sub-floor and integrating it with the wi-fi enabled power point timer. In times when the owner is away from the property
+    or when the thought of conditions in the sub-floor are not front of mind, the addition of an integrated humidity sensor will add automation to the system.
+    The humidity sensor will constantly measure humidity levels in the sub-floor, when a humidity level threshold is reached, a signal will be sent to trigger the wi-fi power point time
+    to turn the fans on and when the humidity level drops below the threshold, another signal will be sent to turn the fans off.The timing of when the humidity sensor is measuring
+    humidity levels can be customised to provide better control over the system based on the property owners needs.This can be particularly useful if noise is an issue, the property owner
+    can control the hours of operation and ensure the sub-floor fan does not turn on during inconvenient times of the day such as early in the morning or in the middle of the night.</p>
+
+  <h2>Tools and Technologies</h2>
+  <p>The hardware required for this project are,
+    <ul>
+      <li><strong> Smart Wifi Power Point Plug </strong><br>
+            Using the <a href="https://www.tp-link.com/au/home-networking/smart-plug/kp115/">TP-Link KP115 Kasa Smart Wifi Plug</a> - this device will provide the consumer with the ability to remotely control the fan using the Kasa Smart app from their Mobile device
+            The TP-Link KP115 is compatible with SmartThings. Using a custom device handler in the SmartThings IDE makes it possible to integrate custom automation.
+
+      <li><strong> Smart Wifi Humidity Sensor </strong><br>
+            Using the <a href="https://aeotec.com/z-wave-sensor/index.html">Aeotec Multisensor 6</a> - integrating this smart sensor to monitor humidity levels adds automation to the project.
+            The Aeotec Multisensor 6 is compatible with SmartThings.
+            Using a custom device handler in the SmartThings IDE to combine this with the TP-Link KP115, the system will automatically turn the subfloor fans on when a certain humidity level is reached.
+    </ul>
+  </p>
+
+  <h2>Skills Required</h2>
+  <p>The skills required to build this project are Programming and Integration knowledge.<br>The programming skills will be required to write a program to monitor the readings from
+    the Humidity Sensor and schedule the sub-floor fans to turn on or off based on the readings from the sensor.Integration knowledge is required to build the custom device handler
+    on the SmartThings IDE to connect the Smart Wifi Power Point Plug and Smart Wifi Humidity Sensor.<br> </p>
+  <p>It is feasible to find the skills required to build the program as the logic in the program is fairly straightforward. The hardware required for this project is readily available
+    as consumer products.</p>
+
+  <h2>Outcome</h2>
+  <p>The successful delivery of this project will add easy access and automation to existing sub-floor ventilation fans.<br></p>
+  <p>The original problem of having to physically access the subfloor every time an adjustment is required to the fans running time schedule is no longer required, as this can be controlled
+    remotely from a Mobile device. The addition of a humidity sensor to automate the sub-floor ventilation fan will add a peace of mind solution to existing systems, knowing the fans
+    will automatically turn on based on real-time humidity level readings.</p>
+<hr>
+
+<h3>Reference List</h3>
+<p style = "font-size: 12px;"">University Technology of Sydney 2021, Termites quietly reveal their secrets, University Technology of Sydney, viewed 11 December 2021, <a href="https://www.uts.edu.au/research-and-teaching/our-research/sustainability/our-research/termites-quietly-reveal-their-secrets">https://www.uts.edu.au/research-and-teaching/our-research/sustainability/our-research/termites-quietly-reveal-their-secrets <a><br>
+  Australia Department of Health. Victoria 2021, Pest control – termites, Australia Department of Health. Victoria, viewed 11 December 2021, <a href="https://www.health.vic.gov.au/environmental-health/pest-control-termites">https://www.health.vic.gov.au/environmental-health/pest-control-termites<a><br>
+  Australia Department of Health. NSW 2021, Mould, Australia Department of Health. NSW, viewed 11 December 2021, <a href="https://www.health.nsw.gov.au/environment/factsheets/Pages/mould.aspx">https://www.health.nsw.gov.au/environment/factsheets/Pages/mould.aspx<a>
+</p>
+
+</main>
+
+  </body>
